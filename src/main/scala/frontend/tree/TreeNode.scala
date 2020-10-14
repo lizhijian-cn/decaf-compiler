@@ -1,5 +1,14 @@
 package frontend.tree
 
-abstract class TreeNode {
+abstract sealed class ASTNode {
 
 }
+
+class Prog extends ASTNode {
+
+}
+abstract class StmtNode {
+
+}
+
+case class BlockNode()
